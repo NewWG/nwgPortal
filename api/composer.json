@@ -1,0 +1,14 @@
+{
+    "name": "santa-digital/api",
+    "authors": [
+        {
+            "name": "Rafael Santos",
+            "email": "rafaels@sant.at"
+        }
+    ],
+    "require": {
+        "silex/silex": "^2.0",
+        "doctrine/dbal": "^2.5",
+        "deralex/yaml-config-service-provider": "^1.0"
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "jsFiles": [
+        "./bower_components/jquery/dist/jquery.min.js",
+        "./src/js/lib/TweenMax.js",
+        "./src/js/app.js"
+    ]
+}
