@@ -1,5 +1,9 @@
-// fonts
-//font-face('brandon-bld', 'BrandonGrotesque-Bold', 'normal', style = 'normal');
+font-face('greatvibes-regular', 'greatvibes-regular', 'normal', style = 'normal');
+font-face('OpenSans-Extrabold', 'OpenSans-extrabold', 'normal', style = 'normal');
+font-face('OpenSans-Semibold', 'OpenSans-semibold', 'normal', style = 'normal');
+font-face('OpenSans-Regular', 'OpenSans-regular', 'normal', style = 'normal');
+font-face('OpenSans-Light', 'OpenSans-light', 'normal', style = 'normal');
+font-face('OpenSans-Bold', 'OpenSans-bold', 'normal', style = 'normal');
 
 * {
     box-sizing: border-box;
@@ -10,18 +14,31 @@
 
 html,
 body {
-    &.hidden-scroll {
-        overflow: hidden;
-    }    
+    box-sizing: border-box;
+}
 
-    .left { float: left; }
-    .right { float: right; }
+ul {
+    margin: 0;
+    padding: 0;
+}
 
-    .clearfix {
-        clear: both;
-    }
+li { list-style: none; }
 
-    .hide { display: none; }
+a { text-decoration: none; }
 
-    .show { display: block; }
+.hidden-scroll { overflow: hidden; }
+
+.left { float: left; }
+.right { float: right; }    
+
+.hide { display: none; }
+.show { display: block; }
+
+.clearfix { clear: both; }
+
+.wrapper {
+    position: absolute;    
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%);
 }
