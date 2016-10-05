@@ -1,0 +1,53 @@
+.pics {
+	width: 100%;
+	height: 350px;
+	
+	.pic {
+		position: relative;
+		width: 50%;
+		
+		+below(650px) {
+			width: 100%;
+		}
+		
+		img {
+			width: 100%;
+			height: 380px;
+		}
+		
+		.desc {
+			position: absolute;
+			bottom: 50px;
+			display: block;
+			width: 100%;
+			height: 60px;
+			background: rgba(0, 0, 0, .60);
+			
+			h4 {
+				margin: 0 0 0 5%;
+				color: light-blue;
+				line-height: 60px;
+				font-family: 'OpenSans-Light';
+				letter-spacing: 1.2px;
+				font-weight: normal;
+				remify(font-size, 22px);
+				
+				+below(325px) {
+					remify(font-size, 16px);	
+				}
+			}
+		}
+
+		&.pic1 {
+			float: left;
+		}
+		
+		&.pic2 {
+			float: right;
+			
+			+below(650px) {
+				margin-top: -4px;
+			}
+		}
+	}
+}

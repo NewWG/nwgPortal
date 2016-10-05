@@ -42,3 +42,40 @@ a { text-decoration: none; }
     left: 50%;
     transform: translate(-50%);
 }
+
+.header-title {
+    padding: 80px 0 15px;
+    text-align: center;
+    
+    .pre-title {
+        font-family: 'OpenSans-Bold';
+        text-transform: uppercase;
+        color: light-blue;
+        remify(font-size, 18px);
+    }
+    
+    .title {
+        font-family: 'OpenSans-Bold';
+        text-transform: uppercase;
+        color: dark-title;
+        remify(font-size, 50px);
+        margin: 0;
+        
+        +below(1024px) {
+            remify(font-size, 35px);
+        }
+        
+        +below(325px) {
+            remify(font-size, 30px);
+        }
+    }
+    
+    &:after {
+        content: '';
+        background: light-blue;
+        display: block;
+        width: 100px;
+        height: 2px;
+        margin: 20px auto;
+    }
+}

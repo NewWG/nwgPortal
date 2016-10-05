@@ -1,3 +1,36 @@
 .about {
+	background: white;
+	width: 100%;
+	height: auto;
+	min-height: 420px;
+	max-height: 100%;
 	
+	+below(325px) {
+		height: 100vh;
+	}
+	
+	+between(325px, 380px) {
+		height: 550px;
+	}
+	
+	+between(380px, 450px) {
+		height: 520px;
+	}
+	
+	.content {
+		width: 55%;
+		margin: 0 auto;
+		
+		+below(1024px) {
+			width: 100%;
+		}
+		
+		p {
+			text-align: center;
+			color: medium-text;
+			remify(font-size, 14px);
+			line-height: 1.8;
+			padding-bottom: 70px;
+		}
+	}
 }

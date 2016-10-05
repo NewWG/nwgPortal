@@ -281,6 +281,45 @@ a {
   -ms-transform: translate(-50%);
   transform: translate(-50%);
 }
+.header-title {
+  padding: 80px 0 15px;
+  text-align: center;
+}
+.header-title .pre-title {
+  font-family: 'OpenSans-Bold';
+  text-transform: uppercase;
+  color: #00c2e5;
+  font-size: 18px;
+  font-size: 1.125rem;
+}
+.header-title .title {
+  font-family: 'OpenSans-Bold';
+  text-transform: uppercase;
+  color: #171c24;
+  font-size: 50px;
+  font-size: 3.125rem;
+  margin: 0;
+}
+@media only screen and (max-width: 1024px) {
+  .header-title .title {
+    font-size: 35px;
+    font-size: 2.1875rem;
+  }
+}
+@media only screen and (max-width: 325px) {
+  .header-title .title {
+    font-size: 30px;
+    font-size: 1.875rem;
+  }
+}
+.header-title:after {
+  content: '';
+  background: #00c2e5;
+  display: block;
+  width: 100px;
+  height: 2px;
+  margin: 20px auto;
+}
 .header {
   width: 100%;
   height: 100vh;
@@ -554,5 +593,96 @@ a {
   }
   100% {
     bottom: 40px;
+  }
+}
+.about {
+  background: #fff;
+  width: 100%;
+  height: auto;
+  min-height: 420px;
+  max-height: 100%;
+}
+@media only screen and (max-width: 325px) {
+  .about {
+    height: 100vh;
+  }
+}
+@media only screen and (min-width: 325px) and (max-width: 380px) {
+  .about {
+    height: 550px;
+  }
+}
+@media only screen and (min-width: 380px) and (max-width: 450px) {
+  .about {
+    height: 520px;
+  }
+}
+.about .content {
+  width: 55%;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 1024px) {
+  .about .content {
+    width: 100%;
+  }
+}
+.about .content p {
+  text-align: center;
+  color: #616161;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.8;
+  padding-bottom: 70px;
+}
+.pics {
+  width: 100%;
+  height: 350px;
+}
+.pics .pic {
+  position: relative;
+  width: 50%;
+}
+@media only screen and (max-width: 650px) {
+  .pics .pic {
+    width: 100%;
+  }
+}
+.pics .pic img {
+  width: 100%;
+  height: 380px;
+}
+.pics .pic .desc {
+  position: absolute;
+  bottom: 50px;
+  display: block;
+  width: 100%;
+  height: 60px;
+  background: rgba(0,0,0,0.6);
+}
+.pics .pic .desc h4 {
+  margin: 0 0 0 5%;
+  color: #00c2e5;
+  line-height: 60px;
+  font-family: 'OpenSans-Light';
+  letter-spacing: 1.2px;
+  font-weight: normal;
+  font-size: 22px;
+  font-size: 1.375rem;
+}
+@media only screen and (max-width: 325px) {
+  .pics .pic .desc h4 {
+    font-size: 16px;
+    font-size: 1rem;
+  }
+}
+.pics .pic.pic1 {
+  float: left;
+}
+.pics .pic.pic2 {
+  float: right;
+}
+@media only screen and (max-width: 650px) {
+  .pics .pic.pic2 {
+    margin-top: -4px;
   }
 }
