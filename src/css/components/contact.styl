@@ -1,0 +1,59 @@
+.contact {
+	position: relative;
+	margin-top: 15px;
+	
+	.hire {
+		background: light-blue;
+		height: 250px;
+		color: white;
+		text-align: center;
+		position: relative
+		
+		+below(1024px) {
+			height: 320px;
+		}
+		
+		.content {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 55%;
+			height: auto;
+			
+			+below(1024px) {
+				width: 90%;
+			}
+
+			h2 {
+				font-family: 'OpenSans-Bold';
+				text-transform: uppercase;
+				remify(font-size, 25px);
+				margin-top: 0;
+			}
+			
+			p {
+				font-family: 'OpenSans-Light';
+				remify(font-size, 16px);
+			}
+			
+			a {
+				display: block;
+				width: 200px;
+				height: 45px;
+				border: 2px solid white;
+				color: white;
+				font-family: 'OpenSans-Bold';
+				padding: 10px;
+				text-transform: uppercase;
+				margin: 20px auto 0;
+				transition: all .3s ease-in-out;
+				
+				&:hover {
+					color: light-blue;
+					background: white;
+				}
+			}
+		}
+	}
+}

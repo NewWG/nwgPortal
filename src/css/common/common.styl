@@ -1,4 +1,3 @@
-font-face('greatvibes-regular', 'greatvibes-regular', 'normal', style = 'normal');
 font-face('OpenSans-Extrabold', 'OpenSans-extrabold', 'normal', style = 'normal');
 font-face('OpenSans-Semibold', 'OpenSans-semibold', 'normal', style = 'normal');
 font-face('OpenSans-Regular', 'OpenSans-regular', 'normal', style = 'normal');
@@ -26,6 +25,8 @@ li { list-style: none; }
 
 a { text-decoration: none; }
 
+p { font-family: 'OpenSans-Light'; }
+
 .hidden-scroll { overflow: hidden; }
 
 .left { float: left; }
@@ -34,7 +35,7 @@ a { text-decoration: none; }
 .hide { display: none; }
 .show { display: block; }
 
-.clearfix { clear: both; }
+.clearfix { clear: both; overflow: hidden;}
 
 .wrapper {
     position: absolute;    
@@ -77,5 +78,19 @@ a { text-decoration: none; }
         width: 100px;
         height: 2px;
         margin: 20px auto;
+    }
+}
+
+.text-description {
+    text-align: center;
+    color: medium-text;
+    remify(font-size, 14px);
+    line-height: 1.8;
+    display: block;
+    width: 55%;
+    margin: 0 auto;
+    
+    +below(1024px) {
+        width: 100%;
     }
 }
