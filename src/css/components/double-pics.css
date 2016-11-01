@@ -1,0 +1,33 @@
+.pics .pic {
+  position: relative;
+  width: 50%;
+below(650px)
+}
+.pics .pic img {
+  width: 100%;
+  height: auto;
+}
+.pics .pic .desc {
+  position: absolute;
+  bottom: 50px;
+  display: block;
+  width: 100%;
+  height: 60px;
+  background: rgba(0,0,0,0.6);
+}
+.pics .pic .desc h4 {
+  margin: 0 0 0 5%;
+  color: light-blue;
+  line-height: 60px;
+  font-family: 'OpenSans-Light';
+  letter-spacing: 1.2px;
+  font-weight: normal;
+below(325px)
+}
+.pics .pic.pic1 {
+  float: left;
+}
+.pics .pic.pic2 {
+  float: right;
+below(650px)
+}

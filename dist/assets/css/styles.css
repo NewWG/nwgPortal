@@ -694,71 +694,40 @@ p {
     margin-top: -4px;
   }
 }
-.services {
-  height: 90vh;
+.services .center {
+  width: 80%;
+  margin: 0 auto;
 }
-@media only screen and (max-width: 325px) {
-  .services {
-    height: 330vh;
-  }
-}
-@media only screen and (min-width: 325px) and (max-width: 400px) {
-  .services {
-    height: 305vh;
-  }
-}
-@media only screen and (min-width: 400px) and (max-width: 415px) {
-  .services {
-    height: 255vh;
-  }
-}
-@media only screen and (min-width: 450px) and (max-width: 780px) {
-  .services {
-    height: 110vh;
-  }
-}
-@media only screen and (min-width: 800px) and (max-width: 1024px) {
-  .services {
-    height: 150vh;
-  }
-}
-.services .services-list {
-  position: absolute;
+.services .center .services-list {
   width: 100%;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
   min-height: 300px;
   margin-bottom: 80px;
   border-top: 1px solid #ccc;
   border-left: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
-  margin: 160px 0 80px;
+  margin-top: 160px 0 80px;
 }
-.services .services-list .box {
+.services .center .services-list .box {
   position: relative;
   width: 25%;
-  height: 325px;
+  height: 299px;
   float: left;
   border-right: 1px solid #ccc;
   cursor: pointer;
 }
 @media only screen and (max-width: 600px) {
-  .services .services-list .box {
+  .services .center .services-list .box {
     width: 100%;
     border-bottom: 1px solid #ccc;
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
-  .services .services-list .box {
+  .services .center .services-list .box {
     width: 50%;
     border-bottom: 1px solid #ccc;
   }
 }
-.services .services-list .box h4 {
+.services .center .services-list .box h4 {
   color: #171c24;
   text-transform: uppercase;
   font-family: 'OpenSans-Regular';
@@ -770,12 +739,12 @@ p {
   font-weight: normal;
 }
 @media only screen and (max-width: 1024px) {
-  .services .services-list .box h4 {
+  .services .center .services-list .box h4 {
     font-size: 25px;
     font-size: 1.5625rem;
   }
 }
-.services .services-list .box p {
+.services .center .services-list .box p {
   text-align: center;
   color: #616161;
   font-size: 13px;
@@ -784,12 +753,12 @@ p {
   font-family: 'OpenSans-Light';
 }
 @media only screen and (max-width: 1024px) {
-  .services .services-list .box p {
+  .services .center .services-list .box p {
     font-size: 14px;
     font-size: 0.875rem;
   }
 }
-.services .services-list .box:before {
+.services .center .services-list .box:before {
   content: '';
   display: block;
   position: absolute;
@@ -813,10 +782,10 @@ p {
   transition: background 0.3s linear;
   overflow: hidden;
 }
-.services .services-list .box:hover:before {
+.services .center .services-list .box:hover:before {
   background-color: #00c2e5;
 }
-.services .services-list .box:nth-child(1):before {
+.services .center .services-list .box:nth-child(1):before {
   background-image: url("../img/icon-code.png");
   background-position: center 38px;
   background-repeat: no-repeat;
@@ -824,10 +793,10 @@ p {
   -moz-background-size: contain;
   background-size: contain;
 }
-.services .services-list .box:nth-child(1):hover:before {
+.services .center .services-list .box:nth-child(1):hover:before {
   background-position: center -38px;
 }
-.services .services-list .box:nth-child(2):before {
+.services .center .services-list .box:nth-child(2):before {
   background-image: url("../img/icon-code.png");
   background-position: center 38px;
   background-repeat: no-repeat;
@@ -835,10 +804,10 @@ p {
   -moz-background-size: contain;
   background-size: contain;
 }
-.services .services-list .box:nth-child(2):hover:before {
+.services .center .services-list .box:nth-child(2):hover:before {
   background-position: center -38px;
 }
-.services .services-list .box:nth-child(3):before {
+.services .center .services-list .box:nth-child(3):before {
   background-image: url("../img/icon-code.png");
   background-position: center 38px;
   background-repeat: no-repeat;
@@ -846,10 +815,10 @@ p {
   -moz-background-size: contain;
   background-size: contain;
 }
-.services .services-list .box:nth-child(3):hover:before {
+.services .center .services-list .box:nth-child(3):hover:before {
   background-position: center -38px;
 }
-.services .services-list .box:nth-child(4):before {
+.services .center .services-list .box:nth-child(4):before {
   background-image: url("../img/icon-code.png");
   background-position: center 38px;
   background-repeat: no-repeat;
@@ -857,7 +826,7 @@ p {
   -moz-background-size: contain;
   background-size: contain;
 }
-.services .services-list .box:nth-child(4):hover:before {
+.services .center .services-list .box:nth-child(4):hover:before {
   background-position: center -38px;
 }
 .contact {
