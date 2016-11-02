@@ -11,7 +11,7 @@
 			border-top: 1px solid light-border;
 			border-left: 1px solid light-border;
 			border-bottom: 1px solid light-border;
-			margin-top: 160px 0 80px;
+			margin: 160px 0 80px;
 
 			.box {
 				position: relative;
@@ -28,7 +28,43 @@
 				
 				+between(600px, 1024px) {
 					width: 50%;
-					border-bottom: 1px solid light-border;
+				}
+				
+				&:nth-child(1) {
+					+below(1024px) {
+						border-right: 0;
+					}
+					
+					+below(600px) {
+						border-right: 1px solid light-border;
+					}
+				}
+				
+				&:nth-child(2) {
+					+below(1024px) {
+						border-left: 1px solid light-border;
+					}
+				}
+				
+				&:nth-child(3) {
+					+below(1024px) {
+						border-left: 1px solid light-border;
+						border-bottom: 1px solid light-border;
+					}
+					
+					+below(600px) {
+
+					}
+				}
+				
+				&:nth-child(4) {
+					+below(1024px) {
+						border-bottom: 1px solid light-border;
+					}
+					
+					+below(600px) {
+						border-left: 1px solid light-border;
+					}
 				}
 
 				h4 {
@@ -43,15 +79,16 @@
 					
 					+below(1024px) {
 						remify(font-size, 25px);
+						padding-top: 60px;
 					}
 				}
 				
 				p {
+					font-family: 'OpenSans-Light';
 					text-align: center;
 					color: medium-text;
 					remify(font-size, 13px);
 					padding: 0 6%;
-					font-family: 'OpenSans-Light';
 					
 					+below(1024px) {
 						remify(font-size, 14px);

@@ -705,7 +705,7 @@ p {
   border-top: 1px solid #ccc;
   border-left: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
-  margin-top: 160px 0 80px;
+  margin: 160px 0 80px;
 }
 .services .center .services-list .box {
   position: relative;
@@ -724,7 +724,37 @@ p {
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
   .services .center .services-list .box {
     width: 50%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .services .center .services-list .box:nth-child(1) {
+    border-right: 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .services .center .services-list .box:nth-child(1) {
+    border-right: 1px solid #ccc;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .services .center .services-list .box:nth-child(2) {
+    border-left: 1px solid #ccc;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .services .center .services-list .box:nth-child(3) {
+    border-left: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .services .center .services-list .box:nth-child(4) {
+    border-bottom: 1px solid #ccc;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .services .center .services-list .box:nth-child(4) {
+    border-left: 1px solid #ccc;
   }
 }
 .services .center .services-list .box h4 {
@@ -742,15 +772,16 @@ p {
   .services .center .services-list .box h4 {
     font-size: 25px;
     font-size: 1.5625rem;
+    padding-top: 60px;
   }
 }
 .services .center .services-list .box p {
+  font-family: 'OpenSans-Light';
   text-align: center;
   color: #616161;
   font-size: 13px;
   font-size: 0.8125rem;
   padding: 0 6%;
-  font-family: 'OpenSans-Light';
 }
 @media only screen and (max-width: 1024px) {
   .services .center .services-list .box p {
@@ -829,9 +860,34 @@ p {
 .services .center .services-list .box:nth-child(4):hover:before {
   background-position: center -38px;
 }
+.team {
+  border-top: 1px solid #eef;
+}
+.team .team-list {
+  margin: 40px 0 0;
+  overflow: hidden;
+  height: 400px;
+}
+.team .team-list .team-item {
+  display: inline-block;
+  width: 25%;
+  font-size: 0;
+}
+.team .team-list .team-item img {
+  width: 100%;
+  height: auto;
+  filter: grayscale(100%);
+  -webkit-transition: 0.3s filter ease-in-out;
+  -moz-transition: 0.3s filter ease-in-out;
+  -o-transition: 0.3s filter ease-in-out;
+  -ms-transition: 0.3s filter ease-in-out;
+  transition: 0.3s filter ease-in-out;
+}
+.team .team-list .team-item img:hover {
+  filter: grayscale(0%);
+}
 .contact {
   position: relative;
-  margin-top: 15px;
 }
 .contact .hire {
   background: #00c2e5;
