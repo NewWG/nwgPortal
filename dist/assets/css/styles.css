@@ -870,21 +870,74 @@ p {
 }
 .team .team-list .team-item {
   display: inline-block;
+  position: relative;
   width: 25%;
+  height: 100%;
   font-size: 0;
 }
 .team .team-list .team-item img {
   width: 100%;
   height: auto;
   filter: grayscale(100%);
-  -webkit-transition: 0.3s filter ease-in-out;
-  -moz-transition: 0.3s filter ease-in-out;
-  -o-transition: 0.3s filter ease-in-out;
-  -ms-transition: 0.3s filter ease-in-out;
-  transition: 0.3s filter ease-in-out;
+  -webkit-transition: filter 0.5s ease-in-out;
+  -moz-transition: filter 0.5s ease-in-out;
+  -o-transition: filter 0.5s ease-in-out;
+  -ms-transition: filter 0.5s ease-in-out;
+  transition: filter 0.5s ease-in-out;
 }
 .team .team-list .team-item img:hover {
   filter: grayscale(0%);
+}
+.team .team-list .team-item .description {
+  width: 100%;
+  height: 0;
+  position: absolute;
+  bottom: 0;
+  background: #00c2e5;
+}
+.team .team-list .team-item .description.memberAnimate {
+  -webkit-animation: memberAnimate 0.5s linear;
+  -moz-animation: memberAnimate 0.5s linear;
+  -o-animation: memberAnimate 0.5s linear;
+  -ms-animation: memberAnimate 0.5s linear;
+  animation: memberAnimate 0.5s linear;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+@-moz-keyframes memberAnimate {
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: 25%;
+  }
+}
+@-webkit-keyframes memberAnimate {
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: 25%;
+  }
+}
+@-o-keyframes memberAnimate {
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: 25%;
+  }
+}
+@keyframes memberAnimate {
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: 25%;
+  }
 }
 .contact {
   position: relative;
