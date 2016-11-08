@@ -1,5 +1,6 @@
 .contact {
 	position: relative;
+	margin-top: -4px;
 	
 	.hire {
 		background: light-blue;
@@ -51,6 +52,105 @@
 				&:hover {
 					color: light-blue;
 					background: white;
+				}
+			}
+		}
+	}
+	
+	.contact-form {
+		background: bg-dark;
+		padding: 80px 0;
+		overflow: hidden;
+		
+		.center {
+			width: 80%;
+			margin: 0 auto;
+
+			.contact-item {
+				width: 50%;
+				
+				+below(900px) {
+					width: 100%;
+				}
+				
+				.ttl-small {
+					font-family: 'OpenSans-Bold';
+					color: white;
+					remify(font-size, 18px);
+					margin-top: 0;
+					text-transform: uppercase;				
+					
+					&:after {
+						content: '';
+						display: block;
+						width: 160px;
+						height: 2px;
+						background: white;
+						margin-right: 15px;
+						margin-top: 5px;
+					}
+		
+				}
+
+				&.form-email {
+					float: left;
+					
+					.ipt-text {
+						font-family: 'OpenSans-Regular';
+						display: block;
+						width: 70%;
+						padding: 12px;
+						margin-bottom: 10px;
+						border-radius: 4px;
+						border: none;
+						color: dark-text;
+						remify(font-size, 14px);
+						
+						+below(900px) {
+							width: 100%;
+						}
+					}
+					
+					.ipt-area {
+						font-family: 'OpenSans-Regular';
+						remify(font-size, 14px);
+						border-radius: 4px;
+						width: 70%;
+						padding: 12px;
+						height: 100px;
+						
+						+below(900px) {
+							width: 100%;
+						}
+					}
+					
+					.button-white {
+						display: block;
+						color: white;
+						border: 2px solid light-blue;
+						padding: 12px;
+						width: 150px;						
+						text-align: center;
+						margin: 10px 0 0;
+						transition: background .3s linear;
+						background: light-blue;
+						text-transform: uppercase;
+						remify(font-size, 14px);
+						
+						&:hover {
+							background: bg-dark;							
+						}
+					}
+				}
+				
+				&.social {
+					float: right;
+					width: 50%;
+					
+					+below(900px) {
+						float: left;
+						margin-top: 50px;
+					}
 				}
 			}
 		}
