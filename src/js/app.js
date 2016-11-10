@@ -77,6 +77,14 @@
 		}
 
 		this.handlerSendEamil = function() {
+			var field = $('.form-email .ipt-text').length;
+
+			for (var i = 0; i < field.length; i++) {
+				(field[i].val() == '') ? field[i].addClass('error').removeClass('success') : field[i].addClass('success').removeClass('error');
+			}
+
+			if ($('.form-email .ipt-text').hasClass('error')) return false;
+
 			/*$.ajax({
 		     	url: '/api/send-email.php',
 		     	success: function(data) {
