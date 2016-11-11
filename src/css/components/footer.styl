@@ -1,0 +1,40 @@
+.footer {
+	background: light-blue;;
+	padding: 30px 0;
+	position: relative;
+
+	.center {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 80%;
+		overflow: hidden;
+		
+		span {
+			color: white;
+			line-height: 40px;
+			font-family: 'OpenSans-Regular';
+			remify(font-size, 14px);
+			text-transform: uppercase;
+			display: block;
+			width: 80%;
+			float: left;
+			
+			+below(325px) {
+				remify(font-size, 12px);
+			}
+		}
+		
+		.facebook {
+			display: block;
+			background-image: url(img-path + 'icon-facebook.png');
+			background-position: center;
+			background-size: contain;
+			background-repeat: no-repeat;
+			width: 40px;
+			height: 40px;
+			float: right;
+		}
+	}
+}

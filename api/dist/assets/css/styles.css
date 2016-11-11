@@ -332,6 +332,13 @@ p {
     width: 100%;
   }
 }
+.normal-animaton {
+  -webkit-animation: normalAnimation 0.5s ease-in-out;
+  -moz-animation: normalAnimation 0.5s ease-in-out;
+  -o-animation: normalAnimation 0.5s ease-in-out;
+  -ms-animation: normalAnimation 0.5s ease-in-out;
+  animation: normalAnimation 0.5s ease-in-out;
+}
 .header {
   width: 100%;
   height: 100vh;
@@ -694,43 +701,12 @@ p {
     margin-top: -4px;
   }
 }
-.services {
-  height: 90vh;
+.services .center {
+  width: 80%;
+  margin: 0 auto;
 }
-@media only screen and (max-width: 325px) {
-  .services {
-    height: 330vh;
-  }
-}
-@media only screen and (min-width: 325px) and (max-width: 400px) {
-  .services {
-    height: 305vh;
-  }
-}
-@media only screen and (min-width: 400px) and (max-width: 415px) {
-  .services {
-    height: 255vh;
-  }
-}
-@media only screen and (min-width: 450px) and (max-width: 780px) {
-  .services {
-    height: 110vh;
-  }
-}
-@media only screen and (min-width: 800px) and (max-width: 1024px) {
-  .services {
-    height: 150vh;
-  }
-}
-.services .services-list {
-  position: absolute;
+.services .center .services-list {
   width: 100%;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
   min-height: 300px;
   margin-bottom: 80px;
   border-top: 1px solid #ccc;
@@ -738,27 +714,57 @@ p {
   border-bottom: 1px solid #ccc;
   margin: 160px 0 80px;
 }
-.services .services-list .box {
+.services .center .services-list .box {
   position: relative;
   width: 25%;
-  height: 325px;
+  height: 299px;
   float: left;
   border-right: 1px solid #ccc;
   cursor: pointer;
 }
 @media only screen and (max-width: 600px) {
-  .services .services-list .box {
+  .services .center .services-list .box {
     width: 100%;
     border-bottom: 1px solid #ccc;
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
-  .services .services-list .box {
+  .services .center .services-list .box {
     width: 50%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .services .center .services-list .box:nth-child(1) {
+    border-right: 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .services .center .services-list .box:nth-child(1) {
+    border-right: 1px solid #ccc;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .services .center .services-list .box:nth-child(2) {
+    border-left: 1px solid #ccc;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .services .center .services-list .box:nth-child(3) {
+    border-left: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
   }
 }
-.services .services-list .box h4 {
+@media only screen and (max-width: 1024px) {
+  .services .center .services-list .box:nth-child(4) {
+    border-bottom: 1px solid #ccc;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .services .center .services-list .box:nth-child(4) {
+    border-left: 1px solid #ccc;
+  }
+}
+.services .center .services-list .box h4 {
   color: #171c24;
   text-transform: uppercase;
   font-family: 'OpenSans-Regular';
@@ -770,26 +776,27 @@ p {
   font-weight: normal;
 }
 @media only screen and (max-width: 1024px) {
-  .services .services-list .box h4 {
+  .services .center .services-list .box h4 {
     font-size: 25px;
     font-size: 1.5625rem;
+    padding-top: 60px;
   }
 }
-.services .services-list .box p {
+.services .center .services-list .box p {
+  font-family: 'OpenSans-Light';
   text-align: center;
   color: #616161;
   font-size: 13px;
   font-size: 0.8125rem;
   padding: 0 6%;
-  font-family: 'OpenSans-Light';
 }
 @media only screen and (max-width: 1024px) {
-  .services .services-list .box p {
+  .services .center .services-list .box p {
     font-size: 14px;
     font-size: 0.875rem;
   }
 }
-.services .services-list .box:before {
+.services .center .services-list .box:before {
   content: '';
   display: block;
   position: absolute;
@@ -813,10 +820,10 @@ p {
   transition: background 0.3s linear;
   overflow: hidden;
 }
-.services .services-list .box:hover:before {
+.services .center .services-list .box:hover:before {
   background-color: #00c2e5;
 }
-.services .services-list .box:nth-child(1):before {
+.services .center .services-list .box:nth-child(1):before {
   background-image: url("../img/icon-code.png");
   background-position: center 38px;
   background-repeat: no-repeat;
@@ -824,10 +831,10 @@ p {
   -moz-background-size: contain;
   background-size: contain;
 }
-.services .services-list .box:nth-child(1):hover:before {
+.services .center .services-list .box:nth-child(1):hover:before {
   background-position: center -38px;
 }
-.services .services-list .box:nth-child(2):before {
+.services .center .services-list .box:nth-child(2):before {
   background-image: url("../img/icon-code.png");
   background-position: center 38px;
   background-repeat: no-repeat;
@@ -835,10 +842,10 @@ p {
   -moz-background-size: contain;
   background-size: contain;
 }
-.services .services-list .box:nth-child(2):hover:before {
+.services .center .services-list .box:nth-child(2):hover:before {
   background-position: center -38px;
 }
-.services .services-list .box:nth-child(3):before {
+.services .center .services-list .box:nth-child(3):before {
   background-image: url("../img/icon-code.png");
   background-position: center 38px;
   background-repeat: no-repeat;
@@ -846,10 +853,10 @@ p {
   -moz-background-size: contain;
   background-size: contain;
 }
-.services .services-list .box:nth-child(3):hover:before {
+.services .center .services-list .box:nth-child(3):hover:before {
   background-position: center -38px;
 }
-.services .services-list .box:nth-child(4):before {
+.services .center .services-list .box:nth-child(4):before {
   background-image: url("../img/icon-code.png");
   background-position: center 38px;
   background-repeat: no-repeat;
@@ -857,12 +864,46 @@ p {
   -moz-background-size: contain;
   background-size: contain;
 }
-.services .services-list .box:nth-child(4):hover:before {
+.services .center .services-list .box:nth-child(4):hover:before {
   background-position: center -38px;
+}
+.team {
+  border-top: 1px solid #eef;
+}
+.team .team-list {
+  margin: 40px 0 0;
+  overflow: hidden;
+}
+.team .team-list .team-item {
+  display: inline-block;
+  position: relative;
+  width: 25%;
+  font-size: 0;
+  overflow: hidden;
+}
+.team .team-list .team-item img {
+  width: 100%;
+  height: auto;
+  filter: grayscale(100%);
+  -webkit-transition: filter 0.2s ease-in-out;
+  -moz-transition: filter 0.2s ease-in-out;
+  -o-transition: filter 0.2s ease-in-out;
+  -ms-transition: filter 0.2s ease-in-out;
+  transition: filter 0.2s ease-in-out;
+}
+.team .team-list .team-item .description {
+  width: 100%;
+  height: 0;
+  position: absolute;
+  bottom: 0;
+  background: #00c2e5;
+}
+.team .team-list .team-item:hover img {
+  filter: grayscale(0%);
 }
 .contact {
   position: relative;
-  margin-top: 15px;
+  margin-top: -4px;
 }
 .contact .hire {
   background: #00c2e5;
@@ -924,4 +965,151 @@ p {
 .contact .hire .content a:hover {
   color: #00c2e5;
   background: #fff;
+}
+.contact .contact-form {
+  background: #222429;
+  padding: 80px 0;
+  overflow: hidden;
+}
+.contact .contact-form .center {
+  width: 80%;
+  margin: 0 auto;
+}
+.contact .contact-form .center .contact-item {
+  width: 50%;
+}
+@media only screen and (max-width: 900px) {
+  .contact .contact-form .center .contact-item {
+    width: 100%;
+  }
+}
+.contact .contact-form .center .contact-item .ttl-small {
+  font-family: 'OpenSans-Bold';
+  color: #fff;
+  font-size: 18px;
+  font-size: 1.125rem;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+.contact .contact-form .center .contact-item .ttl-small:after {
+  content: '';
+  display: block;
+  width: 160px;
+  height: 2px;
+  background: #fff;
+  margin-right: 15px;
+  margin-top: 5px;
+}
+.contact .contact-form .center .contact-item.form-email {
+  float: left;
+}
+.contact .contact-form .center .contact-item.form-email .ipt-text {
+  font-family: 'OpenSans-Regular';
+  display: block;
+  width: 70%;
+  padding: 12px;
+  margin-bottom: 10px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  border: none;
+  color: #444;
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+@media only screen and (max-width: 900px) {
+  .contact .contact-form .center .contact-item.form-email .ipt-text {
+    width: 100%;
+  }
+}
+.contact .contact-form .center .contact-item.form-email .ipt-area {
+  font-family: 'OpenSans-Regular';
+  font-size: 14px;
+  font-size: 0.875rem;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  width: 70%;
+  padding: 12px;
+  height: 100px;
+}
+@media only screen and (max-width: 900px) {
+  .contact .contact-form .center .contact-item.form-email .ipt-area {
+    width: 100%;
+  }
+}
+.contact .contact-form .center .contact-item.form-email .button-white {
+  display: block;
+  color: #fff;
+  border: 2px solid #00c2e5;
+  padding: 12px;
+  width: 150px;
+  text-align: center;
+  margin: 10px 0 0;
+  -webkit-transition: background 0.3s linear;
+  -moz-transition: background 0.3s linear;
+  -o-transition: background 0.3s linear;
+  -ms-transition: background 0.3s linear;
+  transition: background 0.3s linear;
+  background: #00c2e5;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+.contact .contact-form .center .contact-item.form-email .button-white:hover {
+  background: #222429;
+}
+.contact .contact-form .center .contact-item.social {
+  float: right;
+  width: 50%;
+}
+@media only screen and (max-width: 900px) {
+  .contact .contact-form .center .contact-item.social {
+    float: left;
+    margin-top: 50px;
+  }
+}
+.footer {
+  background: #00c2e5;
+  padding: 30px 0;
+  position: relative;
+}
+.footer .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 80%;
+  overflow: hidden;
+}
+.footer .center span {
+  color: #fff;
+  line-height: 40px;
+  font-family: 'OpenSans-Regular';
+  font-size: 14px;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  display: block;
+  width: 80%;
+  float: left;
+}
+@media only screen and (max-width: 325px) {
+  .footer .center span {
+    font-size: 12px;
+    font-size: 0.75rem;
+  }
+}
+.footer .center .facebook {
+  display: block;
+  background-image: url("../img/icon-facebook.png");
+  background-position: center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  float: right;
 }

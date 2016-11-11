@@ -12,16 +12,16 @@
 		<div class="wrapper">
 			<nav class="navbar">
 				<a href="javascript:;" class="logo left"></a>
-				
+
 				<a href="javascript:;" class="icon-menu"></a>
 				<ul class="menu right">
-					<li class="menu-item active"><a href="javascript:;">Home</a></li>
-					<li class="menu-item"><a href="javascript:;">Sobre</a></li>
-					<li class="menu-item"><a href="javascript:;">Serviços</a></li>
-					<li class="menu-item"><a href="javascript:;">Contact</a></li>
-					<li class="menu-item"><a href="javascript:;">Team</a></li>
+					<li class="menu-item active" id="header"><a href="javascript:;">Home</a></li>
+					<li class="menu-item" id="about"><a href="javascript:;">Sobre</a></li>
+					<li class="menu-item" id="services"><a href="javascript:;">Serviços</a></li>
+					<li class="menu-item" id="team"><a href="javascript:;">Team</a></li>
+					<li class="menu-item" id="contact"><a href="javascript:;">Contact</a></li>
 				</ul>
-			</nav>	
+			</nav>
 		</div>
 
 		<div class="description">
@@ -29,7 +29,7 @@
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi imperdiet magna eget pulvinar elementum. </p>
 		</div>
 
-		<span class="scroll"></span>		
+		<span class="scroll"></span>
 	</section>
 
 	<section class="about">
@@ -39,7 +39,7 @@
 				<h2 class="title">Lorem ipsum dolor</h2>
 			</div>
 			<div class="content">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nisl quam, aliquam vel lorem in, aliquam sodales quam. Donec vestibulum sodales feugiat. Quisque sed imperdiet lacus. Proin porttitor luctus magna nec blandit. Donec id sem sed ligula viverra ultricies. Fusce est magna, sodales eget vestibulum in, viverra vel orci.</p>	
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nisl quam, aliquam vel lorem in, aliquam sodales quam. Donec vestibulum sodales feugiat. Quisque sed imperdiet lacus. Proin porttitor luctus magna nec blandit. Donec id sem sed ligula viverra ultricies. Fusce est magna, sodales eget vestibulum in, viverra vel orci.</p>
 			</div>
 		</div>
 	</section>
@@ -48,27 +48,27 @@
 		<div class="pic pic1">
 			<img src="assets/img/ban04.jpg">
 			<div class="desc">
-				<h4>Lorem ipsum dolor sit amet</h4>	
+				<h4>Lorem ipsum dolor sit amet</h4>
 			</div>
 		</div>
 
 		<div class="pic pic2">
 			<img src="assets/img/ban06.jpg">
 			<div class="desc">
-				<h4>Lorem ipsum dolor sit amet</h4>	
+				<h4>Lorem ipsum dolor sit amet</h4>
 			</div>
 		</div>
 	</section>
 
 	<section class="services clearfix">
-		<div class="wrapper">
+		<div class="center">
 			<div class="header-title">
 				<span class="pre-title">Services</span>
 				<h2 class="title">Lorem ipsum dolor</h2>
 			</div>
 			<p class="text-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nisl quam, aliquam vel lorem in, aliquam sodales quam. Quisque sed imperdiet lacus. Proin porttitor luctus magna nec blandit.</p>
 
-			<div class="services-list">				
+			<div class="services-list">
 				<div class="box">
 					<h4>Lorem <strong>ipsum</strong></h4>
 					<p>Having a unique website design is important part of the branding and marketing process of your business</p>
@@ -86,6 +86,42 @@
 				<div class="box">
 					<h4>Lorem <strong>ipsum</strong></h4>
 					<p>Having a unique website design is important part of the branding and marketing process of your business</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="team">
+		<div class="center">
+			<div class="header-title">
+				<span class="pre-title">Our Team</span>
+				<h2 class="title">Lorem ipsum dolor</h2>
+			</div>
+
+			<div class="team-list">
+				<div class="team-item item1">
+					<img src="assets/img/team-member1.jpg" alt="">
+					<div class="description">
+						<h4>Member name</h4>
+					</div>
+				</div><!--
+				--><div class="team-item item1">
+					<img src="assets/img/team-member2.jpg" alt="">
+					<div class="description">
+						<h4>Member name</h4>
+					</div>
+				</div><!--
+				--><div class="team-item item1">
+					<img src="assets/img/team-member3.jpg" alt="">
+					<div class="description">
+						<h4>Member name</h4>
+					</div>
+				</div><!--
+				--><div class="team-item item1">
+					<img src="assets/img/team-member4.jpg" alt="">
+					<div class="description">
+						<h4>Member name</h4>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -101,9 +137,29 @@
 		</div>
 
 		<div class="contact-form">
-			
+			<div class="center">
+				<div class="contact-item form-email">
+					<h4 class="ttl-small">Fale conosco</h4>
+
+					<input type="text" id="name" class="ipt-text" placeholder="Digite seu nome" required>
+					<input type="email" id="email" class="ipt-text" placeholder="Digite seu e-mail" required>
+					<textarea id="message" class="ipt-area" placeholder="Mensagem" required></textarea>
+					<a href="javascript:;" class="button-white">Enviar</a>
+				</div>
+
+				<div class="contact-item social">
+					<h4 class="ttl-small">Redes sociais</h4>
+				</div>
+			</div>
 		</div>
 	</section>
+
+	<footer class="footer">
+		<div class="center">
+			<span>New Web Generation © 2016</span>
+			<a href="https://www.facebook.com/newebg" target="_blank" class="facebook"></a>
+		</div>
+	</footer>
 
 	<!-- BOTTOM SCRIPTS -->
 	<script src="assets/js/app.min.js"></script>
