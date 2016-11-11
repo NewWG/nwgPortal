@@ -1,7 +1,0 @@
-database:
-    driver: pdo_mysql
-    host: mysql.santamotion.com
-    dbname: sitesanta2016
-    user: sitesanta2016
-    password: sitesanta
-    charset: utf8mb4
