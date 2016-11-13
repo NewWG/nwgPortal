@@ -5,7 +5,7 @@
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	
+
 	.navbar {
 		position: relative;
 		height: 80px;
@@ -18,7 +18,7 @@
 			width: 180px;
 			height: 100%;
 		}
-		
+
 		.icon-menu {
 			background: url(img-path + 'icon-menu.png') center no-repeat;
 			background-size: contain;
@@ -28,15 +28,15 @@
 			position: absolute;
 			top: 10px;
 			right: 0;
-			
+
 			+above(1024px) {
 				display: none;
 			}
 		}
-		
+
 		.menu {
 			padding-top: 40px;
-			
+
 			+below(1024px) {
 				display: none;
 			}
@@ -44,25 +44,25 @@
 			.menu-item {
 				float: left;
 				margin: 0 15px;
-				
+
 				&.active {
 					a { color: light-blue; }
 				}
-				
+
 				&:hover {
 					a { color: light-blue; }
 				}
-				
+
 				a {
 					text-transform: uppercase;
-					font-family: 'OpenSans-Bold';
+					font-family: 'opensans-bold';
 					color: white;
 					transition: color .3s ease-in-out;
 				}
 			}
 		}
 	}
-	
+
 	.description {
 		position: absolute;
 		width: 45%;
@@ -70,58 +70,58 @@
 		left: 10%;
 		transform: translateY(-50%);
 		animation: animaDesc 1s ease-in-out;
-		
+
 		@keyframes animaDesc {
 			0% {
 				opacity: 0;
 				left: -50px;
 			}
-			
+
 			100% {
 				opacity: 1;
 				left: 10%;
 			}
 		}
-		
+
 		+below(1024px) {
 			width: 80%;
 		}
 
 		h1 {
 			text-transform: uppercase;
-			font-family: 'OpenSans-Extrabold';
+			font-family: 'opensans-extrabold';
 			remify(font-size, 100px);
 			margin: 0;
 			color: light-blue;
 			line-height: 100px;
 			text-align: left;
-			
+
 			+below(1024px) {
 				remify(font-size, 90px);
 				line-height: 90px;
 			}
-			
+
 			+between(380px, 450px) {
 				remify(font-size, 50px);
 				line-height: 50px;
 			}
-			
+
 			+below(380px) {
 				remify(font-size, 45px);
 				line-height: 45px;
 			}
-			
+
 			+below(325px) {
 				remify(font-size, 38px);
-				line-height: 38px;	
+				line-height: 38px;
 			}
 		}
-		
+
 		p {
-			font-family: 'OpenSans-Light';
+			font-family: 'opensans-light';
 			remify(font-size, 22px);
 			color: white;
-			
+
 			+between(380px, 450px) {
 				remify(font-size, 18px);
 				line-height: 25px;
@@ -133,7 +133,7 @@
 			}
 		}
 	}
-	
+
 	.scroll {
 		background: url(img-path + 'scroll.png') center no-repeat;
 		background-size: contain;
@@ -146,7 +146,7 @@
 		transform: translate(-50%);
 		animation: scroll 2.5s ease-in-out infinite;
 		animation-fill-mode: forwards;
-		
+
 		@keyframes scroll {
 			0% { bottom: 40px; }
 			50% { bottom: 60px;	}
