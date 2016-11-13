@@ -1,11 +1,11 @@
 .services {
-		
+
 	.center {
 		width: 80%;
 		margin: 0 auto;
 
 		.services-list {
-			width: 100%;			
+			width: 100%;
 			min-height: 300px;
 			margin-bottom: 80px;
 			border-top: 1px solid light-border;
@@ -20,48 +20,48 @@
 				float: left;
 				border-right: 1px solid light-border;
 				cursor: pointer;
-				
+
 				+below(600px) {
 					width: 100%;
 					border-bottom: 1px solid light-border;
 				}
-				
+
 				+between(600px, 1024px) {
 					width: 50%;
 				}
-				
+
 				&:nth-child(1) {
 					+below(1024px) {
 						border-right: 0;
 					}
-					
+
 					+below(600px) {
 						border-right: 1px solid light-border;
 					}
 				}
-				
+
 				&:nth-child(2) {
 					+below(1024px) {
 						border-left: 1px solid light-border;
 					}
 				}
-				
+
 				&:nth-child(3) {
 					+below(1024px) {
 						border-left: 1px solid light-border;
 						border-bottom: 1px solid light-border;
 					}
-					
+
 					+below(600px) {
 
 					}
 				}
-				
+
 				&:nth-child(4) {
 					+below(1024px) {
 						border-bottom: 1px solid light-border;
 					}
-					
+
 					+below(600px) {
 						border-left: 1px solid light-border;
 					}
@@ -70,31 +70,31 @@
 				h4 {
 					color: dark-title;
 					text-transform: uppercase;
-					font-family: 'OpenSans-Regular';
+					font-family: 'opensans-regular';
 					text-align: center;
 					remify(font-size, 22px);
 					margin-bottom: 0;
 					padding: 80px 0 15px;
 					font-weight: normal;
-					
+
 					+below(1024px) {
 						remify(font-size, 25px);
 						padding-top: 60px;
 					}
 				}
-				
+
 				p {
-					font-family: 'OpenSans-Light';
+					font-family: 'opensans-light';
 					text-align: center;
 					color: medium-text;
 					remify(font-size, 13px);
 					padding: 0 6%;
-					
+
 					+below(1024px) {
 						remify(font-size, 14px);
 					}
 				}
-				
+
 				&:before {
 					content: '';
 					display: block;
@@ -110,13 +110,13 @@
 					transition: background .3s linear;
 					overflow: hidden;
 				}
-				
+
 				&:hover {
 					&:before {
 						background-color: light-blue;
 					}
 				}
-				
+
 				&:nth-child(1) {
 					&:before {
 						background-image: url(img-path + 'icon-code.png');
@@ -124,14 +124,14 @@
 						background-repeat: no-repeat;
 						background-size: contain;
 					}
-					
+
 					&:hover {
 						&:before {
 							background-position: center -38px;
 						}
 					}
 				}
-				
+
 				&:nth-child(2) {
 					&:before {
 						background-image: url(img-path + 'icon-code.png');
@@ -139,14 +139,14 @@
 						background-repeat: no-repeat;
 						background-size: contain;
 					}
-					
+
 					&:hover {
 						&:before {
 							background-position: center -38px;
 						}
 					}
 				}
-				
+
 				&:nth-child(3) {
 					&:before {
 						background-image: url(img-path + 'icon-code.png');
@@ -154,14 +154,14 @@
 						background-repeat: no-repeat;
 						background-size: contain;
 					}
-					
+
 					&:hover {
 						&:before {
 							background-position: center -38px;
 						}
 					}
 				}
-				
+
 				&:nth-child(4) {
 					&:before {
 						background-image: url(img-path + 'icon-code.png');
@@ -169,7 +169,7 @@
 						background-repeat: no-repeat;
 						background-size: contain;
 					}
-					
+
 					&:hover {
 						&:before {
 							background-position: center -38px;

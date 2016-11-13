@@ -1,10 +1,8 @@
 (function() {
-
 	var main = new Main();
 
 	function Main() {
 		// global vars
-		this.var = '';
 
 		// init
 		this.init = function() {
@@ -31,12 +29,14 @@
 			$('html,body').animate({
 		        scrollTop: $('.'+id).offset().top},
 		        'slow');
-
-			window.location.hash = id;
 		}
 
 		this.hash = function() {
-			return false;
+			var hash = window.location.hash.replace('#', '');
+
+			$('html,body').animate({
+		        scrollTop: $('.'+hash).offset().top},
+		        'slow');
 		}
 
 		this.handlerTeamMember = function(event) {
@@ -85,12 +85,21 @@
 
 			if ($('.form-email .ipt-text').hasClass('error')) return false;
 
-			/*$.ajax({
-		     	url: '/api/send-email.php',
+			var email = {
+				name: $('#name').val(),
+				email: $('#email').val(),
+				message: $('#message').val()
+			}
+
+			$.ajax({
+		     	url: 'api/send-email.php',
+		     	type: 'POST',
+		     	data: email,
 		     	success: function(data) {
-		     		console.log(data);
+		     		var data = JSON.parse(data);
+		     		console.log(data.name);
 		      }
-		 	});*/
+		 	});
 		}
 
 		this.init.call(this);
