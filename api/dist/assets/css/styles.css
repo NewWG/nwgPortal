@@ -340,7 +340,7 @@ p {
   animation: normalAnimation 0.5s ease-in-out;
 }
 .error {
-  border: 1px solid #f00;
+  border: 1px solid #f00 !important;
 }
 .header {
   width: 100%;
@@ -1040,6 +1040,7 @@ p {
   }
 }
 .contact .contact-form .center .contact-item.form-email .button-white {
+  position: relative;
   display: block;
   color: #fff;
   border: 2px solid #00c2e5;
@@ -1059,6 +1060,88 @@ p {
 }
 .contact .contact-form .center .contact-item.form-email .button-white:hover {
   background: #222429;
+}
+.contact .contact-form .center .contact-item.form-email .button-white .loading {
+  display: none;
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #00c2e5;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  -webkit-animation: spin 2s linear infinite;
+  -moz-animation: spin 2s linear infinite;
+  -o-animation: spin 2s linear infinite;
+  -ms-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  margin: 0;
+  position: absolute;
+  right: -40px;
+  top: 7px;
+}
+@-moz-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
 .contact .contact-form .center .contact-item.social {
   float: right;

@@ -50,7 +50,7 @@
 
 	$send = $mail->Send();
 	if($send)
-		echo json_encode('Email enviado com sucesso');
+		echo json_encode(['message' => 'Email enviado com sucesso');
 	else
 		echo json_encode('Erro: '.$mail->ErrorInfo);
 ?>

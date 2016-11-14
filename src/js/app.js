@@ -76,18 +76,20 @@
 			}
 		}
 
-		this.handlerSendEamil = function() {
-			var field = $('.form-email .ipt-text');
+		this.handlerSendEamil = function(event) {
+			var target = $(event.currentTarget);
 
-			/*for (var i = 0; i < field.length; i++) {
-				if ($(field[i]).val() == "") {
+			var field = $('.field');
+
+			for (var i = 0; i < field.length; i++) {
+				if ($(field[i]).val() == '') {
 					$(field[i]).addClass('error');
 				} else {
 					$(field[i]).removeClass('error');
 				}
 			}
 
-			if ($('.ipt-text').hasClass('error')) return false;*/
+			if (field.hasClass('error')) return false;
 
 			var email = {
 				name: $('#name').val(),
@@ -96,6 +98,7 @@
 			}
 
 			console.log(email);
+			$('.loading').show();
 
 			$.ajax({
 		     	url: 'api/send-email.php',
@@ -105,7 +108,7 @@
 		     	success: function(data) {
 		     		//var data = JSON.parse(data);
 		     		console.log(data);
-		     		console.log('teste');
+		     		$('.loading').hide();
 				}
 		 	});
 		}

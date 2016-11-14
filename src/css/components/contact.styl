@@ -125,6 +125,7 @@
 					}
 
 					.button-white {
+						position: relative;
 						display: block;
 						color: white;
 						border: 2px solid light-blue;
@@ -139,6 +140,25 @@
 
 						&:hover {
 							background: bg-dark;
+						}
+
+						.loading {
+							display: none;
+							border: 3px solid light-gray;
+						    border-top: 3px solid light-blue;
+						    border-radius: 50%;
+						    width: 30px;
+						    height: 30px;
+						    animation: spin 2s linear infinite;
+						    margin: 0;
+						    position: absolute;
+						    right: -40px;
+						    top: 7px;
+						}
+
+						@keyframes spin {
+						    0% { transform: rotate(0deg); }
+						    100% { transform: rotate(360deg); }
 						}
 					}
 				}
