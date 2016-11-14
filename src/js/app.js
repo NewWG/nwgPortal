@@ -8,7 +8,7 @@
 		this.init = function() {
 		   this.binds();
 
-		   this.hash.call(this);
+		   //this.hash.call(this);
 		}
 
 		// binds
@@ -77,13 +77,17 @@
 		}
 
 		this.handlerSendEamil = function() {
-			var field = $('.form-email .ipt-text').length;
+			var field = $('.form-email .ipt-text');
 
-			for (var i = 0; i < field.length; i++) {
-				(field[i].val() == '') ? field[i].addClass('error').removeClass('success') : field[i].addClass('success').removeClass('error');
+			/*for (var i = 0; i < field.length; i++) {
+				if ($(field[i]).val() == "") {
+					$(field[i]).addClass('error');
+				} else {
+					$(field[i]).removeClass('error');
+				}
 			}
 
-			if ($('.form-email .ipt-text').hasClass('error')) return false;
+			if ($('.ipt-text').hasClass('error')) return false;*/
 
 			var email = {
 				name: $('#name').val(),
@@ -91,14 +95,18 @@
 				message: $('#message').val()
 			}
 
+			console.log(email);
+
 			$.ajax({
 		     	url: 'api/send-email.php',
 		     	type: 'POST',
+		     	dataType: 'JSON',
 		     	data: email,
 		     	success: function(data) {
-		     		var data = JSON.parse(data);
-		     		console.log(data.name);
-		      }
+		     		//var data = JSON.parse(data);
+		     		console.log(data);
+		     		console.log('teste');
+				}
 		 	});
 		}
 

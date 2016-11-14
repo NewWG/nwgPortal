@@ -5,20 +5,20 @@ font-face('opensans-light', 'opensans-light', 'normal', style = 'normal');
 font-face('opensans-bold', 'opensans-bold', 'normal', style = 'normal');
 
 * {
-    box-sizing: border-box;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+	box-sizing: border-box;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 html,
 body {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 ul {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 li { list-style: none; }
@@ -38,74 +38,78 @@ p { font-family: 'opensans-light'; }
 .clearfix { clear: both; overflow: hidden;}
 
 .wrapper {
-    position: absolute;
-    width: 80%;
-    left: 50%;
-    transform: translate(-50%);
+	position: absolute;
+	width: 80%;
+	left: 50%;
+	transform: translate(-50%);
 }
 
 .header-title {
-    padding: 80px 0 15px;
-    text-align: center;
+	padding: 80px 0 15px;
+	text-align: center;
 
-    .pre-title {
-        font-family: 'opensans-bold';
-        text-transform: uppercase;
-        color: light-blue;
-        remify(font-size, 18px);
-    }
+	.pre-title {
+		font-family: 'opensans-bold';
+		text-transform: uppercase;
+		color: light-blue;
+		remify(font-size, 18px);
+	}
 
-    .title {
-        font-family: 'opensans-bold';
-        text-transform: uppercase;
-        color: dark-title;
-        remify(font-size, 50px);
-        margin: 0;
+	.title {
+		font-family: 'opensans-bold';
+		text-transform: uppercase;
+		color: dark-title;
+		remify(font-size, 50px);
+		margin: 0;
 
-        +below(1024px) {
-            remify(font-size, 35px);
-        }
+		+below(1024px) {
+			remify(font-size, 35px);
+		}
 
-        +below(325px) {
-            remify(font-size, 30px);
-        }
-    }
+		+below(325px) {
+			remify(font-size, 30px);
+		}
+	}
 
-    &:after {
-        content: '';
-        background: light-blue;
-        display: block;
-        width: 100px;
-        height: 2px;
-        margin: 20px auto;
-    }
+	&:after {
+		content: '';
+		background: light-blue;
+		display: block;
+		width: 100px;
+		height: 2px;
+		margin: 20px auto;
+	}
 }
 
 .text-description {
-    text-align: center;
-    color: medium-text;
-    remify(font-size, 14px);
-    line-height: 1.8;
-    display: block;
-    width: 55%;
-    margin: 0 auto;
+	text-align: center;
+	color: medium-text;
+	remify(font-size, 14px);
+	line-height: 1.8;
+	display: block;
+	width: 55%;
+	margin: 0 auto;
 
-    +below(1024px) {
-        width: 100%;
-    }
+	+below(1024px) {
+		width: 100%;
+	}
 }
 
 .normal-animaton {
 
-    animation: normalAnimation .5s ease-in-out;
+	animation: normalAnimation .5s ease-in-out;
 
-    @keyframes {
-        0% {
+	@keyframes {
+		0% {
 
-        }
+		}
 
-        100% {
+		100% {
 
-        }
-    }
+		}
+	}
+}
+
+.error {
+	border: 1px solid red;
 }

@@ -339,6 +339,9 @@ p {
   -ms-animation: normalAnimation 0.5s ease-in-out;
   animation: normalAnimation 0.5s ease-in-out;
 }
+.error {
+  border: 1px solid #f00;
+}
 .header {
   width: 100%;
   height: 100vh;
